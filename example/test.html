@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="main-form">
+    <h1 id="title">Form of Survey</h1>
+    <p id="description">This is a form about what you like best about web development</p>
+
+    <form action="submit" id="survey-form">
+      <label for="name" id="name-label">Enter Name</label>
+      <input type="text" name="nameField" id="name" placeholder="Enter your name here" required>
+      
+      <label for="email" id="email-label">Enter your email:</label>
+      <input type="email" name="emailField" id="email" placeholder="Your email address" required>
+      
+      <label for="number" id="number-label">How excited are you on a scale of 1 to 10? </label>
+      <input type="number" name="numberField" id="number" min="1" max="10" placeholder="10" required>
+      
+      <label for="dropdown">How long have you been coding?</label>
+      <select name="dropdown" id="dropdown">
+        <option value="1">Less than 1 year</option>
+        <option value="2">1 - 2 Years</option>
+        <option value="3">3 - 5 Years</option>
+        <option value="4">5+ Years</option>
+      </select>
+
+      <div class="radioButtons">
+        <p>What language would you like to learn next?</p>
+        <input type="radio" name="newLang" id="python" value="python">
+        <label for="python">Python</label>
+
+        <input type="radio" name="newLang" id="csharp" value="csharp">
+        <label for="csharp">C# &amp; .NET</label>
+
+        <input type="radio" name="newLang" id="java" value="java">
+        <label for="java">Java</label>
+
+        <input type="radio" name="newLang" id="php" value="php">
+        <label for="php">Php</label>
+
+        <input type="radio" name="newLang" id="cplusPlus" value="cplusPlus">
+        <label for="cplusPlus">C++</label>
+
+        <input type="radio" name="newLang" id="swift" value="swift">
+        <label for="swift">Swift</label>
+
+      </div> <!-- End of .radioButtons -->
+
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Please leave your addition comments here"></textarea>
+
+      <div class="checkButtons">
+        <input type="checkbox" name="tech" id="react" value="reactjs">
+        <label for="">React JS</label>
+
+        <input type="checkbox" name="tech" id="angular" value="angular" >
+        <label for="">Angular</label>
+
+        <input type="checkbox" name="tech" id="reactNative" value="reactNative">
+        <label for="">React Native</label>
+
+        <input type="checkbox" name="tech" id="express" value="express">
+        <label for="">Express JS</label>
+
+        <input type="checkbox" name="tech" id="mongoDB" value="mongoDB">
+        <label for="">Mongo DB</label>
+
+        <input type="checkbox" name="tech" id="nodejs" value="nodeJS">
+        <label for="">Node JS</label>
+      </div>
+
+      <button type="submit" id="submit" >Submit</button>
+
+    </form>
+  </div>
+</body>
+
+<!-- Testing suite from FreeCodeCamp.org  -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
