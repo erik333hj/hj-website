@@ -3,37 +3,14 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="styles/second.css">
   <title>
     第二页 (2/20)
   </title>
 
 <body>
   <style>
-    body {
-      background-color: #FAF9DE;
-      font-family: Verdana;
-      text-align: center;
-    }
 
-    form {
-      background-color: #FFFFFF;
-      max-width: 550px;
-      margin: 50px auto;
-      padding: 30px 20px;
-    }
-
-    button {
-
-      border: 1px solid #777;
-      border-radius: 4px;
-      font-family: inherit;
-      font-size: 21px;
-      display: block;
-      width: 100%;
-      margin-top: 40px;
-      margin-bottom: 10px;
-    }
   </style>
 
   <form id="third">
@@ -42,10 +19,10 @@
 
     <img src="he.jpg" width="200" height="200">
     <br>
-    <hi style="font-size:250%;">你最喜欢哪种味道?</hi>
+    <hi style="font-size:200%;">你最喜欢哪种味道?</hi>
 
     <br>
-
+    <!--
     <button onclick="location.href='fruit.html'" type="button">香料或药草味
     </button>
     <button onclick="location.href='fruit.html'" type="button">水果味
@@ -53,6 +30,29 @@
     <button onclick="location.href='fruit.html'" type="button">甜味
     </button>
     <button onclick="location.href='fruit.html'" type="button">其他
+    </button>
+
+ -->
+    <div class="form-control">
+      
+
+      <!-- Input Type Radio Button -->
+      <label for="recommed-1">
+        <input type="radio" id="recommed-1" name="recommed"> 香料或药草味</input>
+      </label>
+      <label for="recommed-2">
+        <input type="radio" id="recommed-2" name="recommed"> 水果味</input>
+      </label>
+      <label for="recommed-3">
+        <input type="radio" id="recommed-3" name="recommed"> 甜味</input>
+      </label>
+    </div>
+
+
+    <button onclick="location.href='third.html'" type="button">下一页
+    </button>
+
+    <button onclick="location.href='first.html'" type="button">上一页
     </button>
 
 
