@@ -1,0 +1,76 @@
+
+body {
+  background-color: #FAF9DE;
+
+  font-family: Verdana;
+  text-align: center;
+}
+
+form {
+  font-size: 20px;
+  background-color: #FFFFFF;
+  max-width: 500px;
+  margin: 55px auto;
+  padding: 30px 20px;
+  border: 1px solid #777;
+  border-radius: 5px;
+}
+
+/* Styling form-control Class */
+.form-control {
+text-align: center;
+margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+display: block;
+margin-bottom: 10px;
+}
+
+/* Styling form-control input,
+  select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+border: 1px solid #777;
+border-radius: 2px;
+font-family: inherit;
+padding: 10px;
+display: block;
+width: 95%;
+}
+
+/* Styling form-control Radio
+  button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+display: inline-block;
+width: auto;
+}
+
+.btn-group button {
+  background-color: #04AA6D; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: center; /* Float the buttons side by side */
+  margin: 10;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
